@@ -1,0 +1,1 @@
+A Program to show how to configure spring security with SecurityFilterChain interface and with in memory authentication:
