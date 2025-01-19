@@ -18,13 +18,13 @@ public class SecurityConfiguration {
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.authorizeHttpRequests()
-		.anyRequest()
-		.authenticated()
-		.and()
-		.httpBasic()
-		.and()
-		.sessionManagement()
-		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+			.anyRequest()
+			.authenticated()
+			.and()
+			.httpBasic()
+			.and()
+			.sessionManagement()
+			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		
 		return httpSecurity.build();
 	}
